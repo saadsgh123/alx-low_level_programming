@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Enter the task name:"
+read task
+echo -e "#!/bin/bash\n" > "$task"
+vi "$task"
+chmod +x "$task"
+git add .
+echo "Enter the commit msg"
+read commit
+git commit -m "$commit"
+git push
