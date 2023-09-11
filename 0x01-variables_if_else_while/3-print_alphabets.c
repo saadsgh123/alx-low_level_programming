@@ -11,7 +11,8 @@ for (char i = 'a'; 'z' >= i; i++)
 {
 putchar(i);
 }
-for (char e = 'A'; e <= 'Z'; ++e) {
+for (char e = 'A'; e <= 'Z'; ++e)
+{
 putchar(e);
 }
 putchar('\n');
