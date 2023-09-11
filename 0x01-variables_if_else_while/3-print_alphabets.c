@@ -7,11 +7,13 @@
 #include <stdio.h>
 int main(void)
 {
-for (char i = 'a'; 'z' >= i; i++)
+char i;
+char e;
+for (i = 'a'; 'z' >= i; i++)
 {
 putchar(i);
 }
-for (char e = 'A'; e <= 'Z'; ++e)
+for (e = 'A'; e <= 'Z'; ++e)
 {
 putchar(e);
 }
