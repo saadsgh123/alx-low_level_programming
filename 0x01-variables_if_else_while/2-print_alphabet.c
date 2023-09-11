@@ -8,7 +8,8 @@
 #include <stdio.h>
 int main(void)
 {
-for (char i = 'a'; 'z' >= i; i++)
+char i;
+for (i = 'a'; 'z' >= i; i++)
 {
 putchar(i);
 }
