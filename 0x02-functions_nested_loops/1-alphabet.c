@@ -1,3 +1,9 @@
+/**
+ * print_alphabet - Print the alphabet in lowercase
+ * followed by new line
+ *
+ * Return: Always void.
+ */
 #include "main.h"
 void print_alphabet(void)
 {
