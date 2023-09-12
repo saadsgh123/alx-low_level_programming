@@ -1,0 +1,9 @@
+#!/bin/bash
+git add .
+echo "Enter a commit msg->"
+read commit
+git commit -m "$commit"
+git pus"
+read commit
+git commit -m "$commit"
+git push
