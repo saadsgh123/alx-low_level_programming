@@ -8,7 +8,7 @@
 #include "main.h"
 int _isalpha(int c)
 {
-char i;
+char i,j;
 for (i = 'a'; i <= 'z' ; ++i)
 {
 if (i == c)
@@ -18,9 +18,9 @@ return (1);
 }
 for (j = 'A'; j <= 'Z' ; ++j) 
 {
-if(j == c)
+if (j == c)
 {
-return 1;
+return (1);
 }
 }
 return (0);
