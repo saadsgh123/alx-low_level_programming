@@ -1,6 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-the entire header file file
+void print_alphabet(void);
 
 #endif
