@@ -8,7 +8,7 @@
 #include "main.h"
 int _isalpha(int c)
 {
-char i , j;
+char i, j;
 for (i = 'a'; i <= 'z' ; ++i)
 {
 if (i == c)
