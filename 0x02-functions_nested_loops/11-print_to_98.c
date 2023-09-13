@@ -32,8 +32,8 @@ printf("%d", i);
 if (i != 98)
 {
 putchar(',');
-}
 putchar(' ');
+}
 }
 }
 putchar('\n');
