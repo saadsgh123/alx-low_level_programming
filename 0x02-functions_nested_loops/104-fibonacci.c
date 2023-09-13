@@ -8,10 +8,10 @@
 int main(void)
 {
 int n = 98;
+int count;
 unsigned long fib1 = 1, fib2 = 2, nextFib;
 
 printf("%lu, %lu, ", fib1, fib2);
-int count;
 
 for (count = 2; count < n; count++)
 {
