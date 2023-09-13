@@ -4,7 +4,7 @@
  * Return: Always 0.
  */
 #include <stdio.h>
-int main()
+int main(void)
 {
 unsigned long long int fib1 = 1, fib2 = 2;
 int count = 2;
@@ -25,5 +25,5 @@ fib1 = fib2;
 fib2 = nextFib;
 count++;
 }
-return 0;
+return (0);
 }
