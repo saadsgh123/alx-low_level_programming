@@ -4,18 +4,15 @@
  * Return: Always 0.
  */
 #include <stdio.h>
-int main(void)
+int main()
 {
-unsigned int fib1 = 1, fib2 = 2;
+unsigned long long int fib1 = 1, fib2 = 2;
 int count = 2;
-
-printf("%u, %u, ", fib1, fib2);
-
+printf("%llu, %llu, ", fib1, fib2);
 while (count < 50)
 {
-unsigned int nextFib = fib1 + fib2;
-printf("%u", nextFib);
-
+unsigned long long int nextFib = fib1 + fib2;
+printf("%llu", nextFib);
 if (count < 49)
 {
 printf(", ");
@@ -26,8 +23,7 @@ printf("\n");
 }
 fib1 = fib2;
 fib2 = nextFib;
-
 count++;
 }
-return (0);
+return 0;
 }
