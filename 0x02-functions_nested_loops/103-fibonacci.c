@@ -4,26 +4,22 @@
  * Return: Always void.
  */
 #include <stdio.h>
+
 int main(void)
 {
-unsigned long fib1 = 1, fib2 = 2;
-int count = 2;
-printf("%lu, %lu, ", fib1, fib2);
-while (count < 50)
+unsigned long fib1 = 1, fib2 = 2, nextFib, sum = 0;
+
+while (fib1 <= 4000000)
 {
-unsigned long nextFib = fib1 + fib2;
-printf("%lu", nextFib);
-if (count < 49)
+if (fib1 % 2 == 0)
 {
-printf(", ");
+sum += fib1;
 }
-else
-{
-printf("\n");
-}
+
+nextFib = fib1 + fib2;
 fib1 = fib2;
 fib2 = nextFib;
-count++;
 }
+printf("%lu\n", sum);
 return (0);
 }
