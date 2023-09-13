@@ -7,17 +7,18 @@
 
 int main(void)
 {
-unsigned long fib1 = 1, fib2 = 2;
-int count = 2; 
+int n = 98;
+int fib1 = 1, fib2 = 2, count = 2;
 
-printf("%lu, %lu, ", fib1, fib2);
+printf("%d, %d, ", fib1, fib2);
 
-while (count < 98)
+while (count < n)
 {
-unsigned long nextFib = fib1 + fib2;
+int nextFib = fib1 + fib2;
 
-printf("%lu", nextFib);
-if (count < 97)
+printf("%d", nextFib);
+
+if (count < n - 1)
 {
 printf(", ");
 }
@@ -29,5 +30,6 @@ fib1 = fib2;
 fib2 = nextFib;
 count++;
 }
+
 return (0);
 }
