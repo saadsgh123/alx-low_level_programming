@@ -14,7 +14,7 @@ printf("%lu, %lu, ", fib1, fib2);
 for (int count = 2; count < n; count++)
 {
 nextFib = fib1 + fib2;
-printf("%llu", nextFib);
+printf("%lu", nextFib);
 if (count < n - 1)
 {
 printf(", ");
