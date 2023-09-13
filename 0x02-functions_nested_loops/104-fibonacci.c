@@ -11,7 +11,9 @@ int n = 98;
 unsigned long fib1 = 1, fib2 = 2, nextFib;
 
 printf("%lu, %lu, ", fib1, fib2);
-for (int count = 2; count < n; count++)
+int count;
+
+for (count = 2; count < n; count++)
 {
 nextFib = fib1 + fib2;
 printf("%lu", nextFib);
