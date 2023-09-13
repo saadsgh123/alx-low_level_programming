@@ -18,7 +18,7 @@ if (x % 3 == 0 || x % 5 == 0)
 i += x;
 }
 }
-printf("%d",i);
+printf("%d\n",i);
 }
 
 int main()
