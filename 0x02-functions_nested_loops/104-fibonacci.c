@@ -7,26 +7,16 @@
 
 int main(void)
 {
-int n = 98;
+unsigned long int fib1 = 1, fib2 = 2;
 int count;
-unsigned long fib1 = 1, fib2 = 2, nextFib;
 
-printf("%lu, %lu, ", fib1, fib2);
-
-for (count = 2; count < n; count++)
+printf("%lu", fib1);
+for (count = 1; count < 98; count++)
 {
-nextFib = fib1 + fib2;
-printf("%lu", nextFib);
-if (count < n - 1)
-{
-printf(", ");
+printf(", %lu", fib2);
+fib2 = fib1 + fib2;
+fib1 = fib2 - fib1;
 }
-else
-{
 printf("\n");
-}
-fib1 = fib2;
-fib2 = nextFib;
-}
 return (0);
 }
