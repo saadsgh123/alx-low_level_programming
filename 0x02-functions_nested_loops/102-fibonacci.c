@@ -9,7 +9,7 @@ int main(void)
 int fib1 = 1, fib2 = 2, nextFib;
 int count = 2;
 
-printf("%lld, %lld, ", fib1, fib2);
+printf("%d, %d, ", fib1, fib2);
 while (count < 50)
 {
 nextFib = fib1 + fib2;
