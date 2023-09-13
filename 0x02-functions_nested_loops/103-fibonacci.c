@@ -6,7 +6,7 @@
 #include <stdio.h>
 int main(void)
 {
-unsigned long long int fib1 = 1, fib2 = 2;
+unsigned long fib1 = 1, fib2 = 2;
 int count = 2;
 printf("%lu, %lu, ", fib1, fib2);
 while (count < 50)
