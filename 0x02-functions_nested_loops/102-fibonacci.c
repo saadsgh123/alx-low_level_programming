@@ -6,14 +6,14 @@
 #include <stdio.h>
 int main(void)
 {
-long long int fib1 = 1, fib2 = 2, nextFib;
+int fib1 = 1, fib2 = 2, nextFib;
 int count = 2;
 
 printf("%lld, %lld, ", fib1, fib2);
 while (count < 50)
 {
 nextFib = fib1 + fib2;
-printf("%lld", nextFib);
+printf("%d", nextFib);
 
 if (count < 49)
 {
