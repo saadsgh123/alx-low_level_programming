@@ -8,20 +8,33 @@
 #include <stdio.h>
 void print_to_98(int n)
 {
-int step = (n < 98) ? 1 : -1;
+if (n > 98)
+{
 int i;
 
-for (i = n; i != 99; i += step)
+for (i = n; i >= 98; i--)
 {
 printf("%d", i);
 if (i != 98)
 {
 putchar(',');
+}
 putchar(' ');
+}
 }
 else
 {
+int i;
+
+for (i = n; i <= 98; i++)
+{
+printf("%d", i);
+if (i != 98)
+{
+putchar(',');
+}
+putchar(' ');
+}
+}
 putchar('\n');
-}
-}
 }
