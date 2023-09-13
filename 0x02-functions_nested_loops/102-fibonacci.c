@@ -6,14 +6,15 @@
 #include <stdio.h>
 int main(void)
 {
-int fib1 = 1, fib2 = 2, nextFib;
+unsigned int fib1 = 1, fib2 = 2;
 int count = 2;
 
-printf("%d, %d, ", fib1, fib2);
+printf("%u, %u, ", fib1, fib2);
+
 while (count < 50)
 {
-nextFib = fib1 + fib2;
-printf("%d", nextFib);
+unsigned int nextFib = fib1 + fib2;
+printf("%u", nextFib);
 
 if (count < 49)
 {
@@ -28,6 +29,5 @@ fib2 = nextFib;
 
 count++;
 }
-
 return (0);
 }
