@@ -1,6 +1,7 @@
 /**
 * print_most_numbers - function that prints the numbers, from 0 to 9
 * followed by a new line.
+* @void: void
 * Return: void.
 */
 
@@ -13,9 +14,9 @@ while (i < 10)
 {
 if (i != 2 & i != 4)
 {
-_putchar(i + '0');
+putchar(i + '0');
 }
 i++;
 }
-_putchar('\n');
+putchar('\n');
 }
