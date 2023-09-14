@@ -12,9 +12,9 @@ while (i < 10)
 {
 if (i != 2 & i != 4)
 {
-putchar(i + '0');
+_putchar(i + '0');
 }
 i++;
 }
-putchar('\n');
+_putchar('\n');
 }
