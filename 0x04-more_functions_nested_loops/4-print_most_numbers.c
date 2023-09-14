@@ -14,9 +14,9 @@ while (i < 10)
 {
 if (i != 2 & i != 4)
 {
-putchar(i + 48);
+_putchar(i + 48);
 }
 i++;
 }
-putchar('\n');
+_putchar('\n');
 }
