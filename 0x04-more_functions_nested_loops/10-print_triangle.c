@@ -15,18 +15,18 @@ for (i = 1; i < size; ++i)
 {
 for (x = 1; x <= (size - i) ; x++)
 {
-putchar(' ');
+_putchar(' ');
 }
 for (y = 1; y <= i; ++y)
 {
-putchar('#');
+_putchar('#');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 }
 return (0);
 }
