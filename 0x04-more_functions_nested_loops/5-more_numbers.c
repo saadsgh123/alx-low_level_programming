@@ -4,20 +4,19 @@
 * Return: 0
 */
 #include "main.h"
-
 void more_numbers(void)
 {
-int i = 0, j;
+int i, j;
 for (j = 0; j < 10; j++)
 {
 for (i = 0; i < 15; i++)
 {
-if (i > 10)
+if (i >= 10)
 {
-_putchar((i / 10) + '0');
+putchar((i / 10) + '0');
 }
-_putchar((i % 10) + '0');
-}
+putchar((i % 10) + '0');
 }
 _putchar('\n');
+}
 }
