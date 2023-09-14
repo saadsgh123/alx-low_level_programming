@@ -4,9 +4,7 @@
 * @size: para checked
 * Return: void.
 */
-
 #include "main.h"
-
 void print_square(int size)
 {
 int i, j;
@@ -17,16 +15,13 @@ putchar('\n');
 }
 else
 {
-for (i = 0; i < size; i++)
+for (i = 1; i <= size; i++)
 {
-for (j = 0; j < size; j++)
+for (j = 1; j <= size; j++)
 {
-_putchar(35);
+putchar(35);
 }
-if (i != 9)
-{
-_putchar('\n');
-}
+putchar('\n');
 }
 }
 }
