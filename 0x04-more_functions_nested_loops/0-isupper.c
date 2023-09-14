@@ -6,14 +6,14 @@
 #include "main.h"
 int _isupper(int c)
 {
-char i=0;
-for(i = 48; i <= 58; i++)
+char i = 0;
+for (i = 'A'; i <= 'Z'; i++)
 {
-if(i==c)
+if (i == c)
 {
 return (1);
 }
-else if(i!=c)
+else if (i != c)
 {
 return (0);
 }
