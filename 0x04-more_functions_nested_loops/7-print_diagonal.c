@@ -5,7 +5,8 @@
 * Return: void.
 */
 #include "main.h"
-void print_diagonal(int n){
+void print_diagonal(int n)
+{
 int i, j;
 for (i = 0; i < n; i++)
 {
