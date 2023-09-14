@@ -17,5 +17,4 @@ continue;
 _putchar(i + '0');
 i++;
 }
-_putchar('\n');
 }
