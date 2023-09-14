@@ -9,7 +9,7 @@ int i = 48;
 while (i < 58)
 {
 _putchar(i);
-_putchar('\n')
 i++;
 }
+_putchar('\n');;
 }
