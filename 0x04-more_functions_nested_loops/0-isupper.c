@@ -13,10 +13,6 @@ if (i == c)
 {
 return (1);
 }
-else if (i != c)
-{
-return (0);
-}
 }
 return (0);
 }
