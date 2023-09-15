@@ -2,11 +2,11 @@
 * print_triangle - Fizzbuzz
 * followed by new line.
 * @size: para
-* Return: 0 (Success)
+* Return: void (Success)
 */
 #include "main.h"
 
-int print_triangle(int size)
+void print_triangle(int size)
 {
 int i, x, y;
 if (size > 0)
@@ -28,5 +28,4 @@ else
 {
 _putchar('\n');
 }
-return (0);
 }
