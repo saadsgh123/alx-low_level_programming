@@ -3,6 +3,4 @@ git add .
 echo "Entre a commit message"
 read commit
 git commit -m "$commit"
-git pus
-git commit -m "$commit"
 git push
