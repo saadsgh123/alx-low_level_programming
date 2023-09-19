@@ -1,33 +1,46 @@
 #include "main.h"
-/**
-* _atoi - prints every other character of a string
-*
-* @str: list of character.
-*
-* Return: result (Success)
-*/
-int _atoi(char *str)
-{
-int result = 0;
-int sign = 1;
 
-while (*str == ' ' || *str == '\t' || *str == '\n')
+/**
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the string
+ */
+int _atoi(char *s)
 {
-str++;
-}
-if (*str == '-')
-{
-sign = -1;
-str++;
-}
-else if (*str == '+')
-{
-str++;
-}
-while (*str >= '0' && *str <= '9')
-{
-result = result * 10 + (*str - '0');
-str++;
-}
-return (result *sign);
+	int i, d, n, len, f, digit;
+
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len && f == 0)
+	{
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
+	}
+
+	if (f == 0)
+		return (0);
+
+	return (n);
 }
