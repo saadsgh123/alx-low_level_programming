@@ -20,18 +20,3 @@ dest[i] = '\0';
 }
 return (dest);
 }
-/**
- * length - function that calculate string length
- * @s: string.
- * Return: len
- */
-int length(char *s)
-{
-int len = 0;
-while (*s != '\0')
-{
-s++;
-len++;
-}
-return (len);
-}
