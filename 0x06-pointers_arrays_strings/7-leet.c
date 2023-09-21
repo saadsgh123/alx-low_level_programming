@@ -25,7 +25,7 @@ isLetter = 1;
 break;
 }
 }
-if (!isLetter)
+if (isLetter == 0)
 {
 n++;
 }
