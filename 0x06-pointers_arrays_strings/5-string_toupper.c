@@ -10,7 +10,7 @@ char *string_toupper(char *n)
 char *original = n;
 while (*n != '\0')
 {
-if (*n >= 97 & *n <= 122)
+if (*n >= 97 && *n <= 122)
 {
 *n = *n - 32;
 }
