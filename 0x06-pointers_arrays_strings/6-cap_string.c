@@ -8,15 +8,21 @@
 char *cap_string(char *n)
 {
 char *new = n;
+char prev = ' ';
+
 while (*n)
 {
-if ((*n >= 1 && *n <= 47) || (*n >= 58 && *n <= 64) || (*n >= 91 && *n <= 96))
+char current = *n;
+if (current >= 'a' && current <= 'z')
 {
-if (*(n + 1) >= 'a' && *(n + 1) <= 'z')
+if (prev == ' ' || prev == '\t' || prev == '\n' || prev == ',' ||
+prev == ';' || prev == '.' || prev == '!' || prev == '?' ||
+prev == '"' || prev == '(' || prev == ')' || prev == '{' || prev == '}')
 {
-*(n + 1) = *(n + 1) - ('a' - 'A');
+*n -= 32;
 }
 }
+prev = current;
 n++;
 }
 return (new);
