@@ -28,5 +28,5 @@ if (!isLetter)
 n++;
 }
 }
-return (new);
+return (n);
 }
