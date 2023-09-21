@@ -6,26 +6,24 @@
  */
 char *leet(char *n)
 {
-char c[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'L'};
-int i[] = {4, 3, 0, 7, 1, 4, 3, 0, 1};
+char c[] = "aAeEoOtTlL";
+char i[] = "4433007711";
 int j;
-char *new;
+char *new = n;
 
-while (*n)
+while (*n != '\0')
 {
 int isLetter = 0;
-
 for (j = 0; j < 9; ++j)
 {
-if (*n == c[j])
+if(*n == c[j])
 {
 isLetter = 1;
-
-*n = '0' + i[j];
+*n = i[j];
 break;
 }
 }
-if (isLetter == 0)
+if(!isLetter)
 {
 n++;
 }
