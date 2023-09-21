@@ -16,14 +16,14 @@ while (*n != '\0')
 int isLetter = 0;
 for (j = 0; j < 9; ++j)
 {
-if(*n == c[j])
+if (*n == c[j])
 {
 isLetter = 1;
 *n = i[j];
 break;
 }
 }
-if(!isLetter)
+if (!isLetter)
 {
 n++;
 }
