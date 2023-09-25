@@ -19,7 +19,7 @@ if (s[i] == accept[j])
 size++;
 break;
 }
-else if (accept[j + 1] == '\0')
+else if (!accept[j + 1])
 	return (size);
 
 }
