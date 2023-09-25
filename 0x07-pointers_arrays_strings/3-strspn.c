@@ -5,8 +5,8 @@
  * @accept: prefix substring
  * Return: number of bytes
  */
- unsigned int _strspn(char *s, char *accept)
- {
+unsigned int _strspn(char *s, char *accept)
+{
 unsigned int size = 0;
 int i;
 
