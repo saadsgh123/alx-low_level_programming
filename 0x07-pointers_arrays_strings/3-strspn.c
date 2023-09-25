@@ -20,8 +20,9 @@ size++;
 break;
 }
 else if (!accept[j + 1])
-	return (size);
-
+{
+return (size);
+}
 }
 }
 return (size);
