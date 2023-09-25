@@ -1,23 +1,22 @@
 #include "main.h"
 /**
- * _strpbrk - function that gets the length of a prefix substring.
- * @s: string to check.
- * @accept: prefix substring
- * Return: number of bytes
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-int i, j;
+int i;
 
-for (i = 0; s[i]; i++)
+while (*s)
 {
-for (j = 0; accept[j]; j++)
+for (i = 0; accept[i]; i++)
 {
-if (s[i] == accept[j])
-{
-return (s + i);
+if (*s == accept[i])
+return (s);
 }
-}
+s++;
 }
 return ('\0');
 }
