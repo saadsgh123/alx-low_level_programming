@@ -7,23 +7,24 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-int i, j;
 unsigned int size = 0;
+int i;
 
-for (i = 0; *s; ++i)
+while (*s)
 {
-for (j = 0; accept[j]; j++)
+for (i = 0; accept[i]; i++)
 {
-if (s[i] == accept[j])
+if (*s == accept[i])
 {
 size++;
 break;
 }
-else if (!accept[j + 1])
+else if (!accept[r + 1])
 {
-return (size);
+return (n);
 }
 }
+s++;
 }
-return (size);
+return (n);
 }
