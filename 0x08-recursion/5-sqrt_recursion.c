@@ -25,7 +25,7 @@ return (_sqrt_recursion_helper(n, 1, n));
  */
 int _sqrt_recursion_helper(int n, int start, int end)
 {
-int mid;
+int mid = 0;
 int pow;
 pow = mid * mid;
 
