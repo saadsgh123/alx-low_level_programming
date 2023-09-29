@@ -1,46 +1,32 @@
 #include "main.h"
-int _sqrt_recursion_helper(int n, int start, int end);
+
+int actual_prime(int n, int i);
+
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: number to calculate the square root of
+ * is_prime_number - says if an integer is a prime number or not
+ * @n: number to evaluate
  *
- * Return: the resulting square root, or -1 if n is negative
+ * Return: 1 if n is a prime number, 0 if not
  */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-if (n < 0)
-return (-1);
-if (n == 0 || n == 1)
-return (n);
-return (_sqrt_recursion_helper(n, 1, n));
+	if (n <= 1)
+		return (0);
+	return (actual_prime(n, n - 1));
 }
 
 /**
- * _sqrt_recursion_helper - recursive helper function to find the square root
- * @n: number to calculate the square root of
- * @start: the start value for searching
- * @end: the end value for searching
+ * actual_prime - calculates if a number is prime recursively
+ * @n: number to evaluate
+ * @i: iterator
  *
- * Return: the resulting square root, or -1 if not found
+ * Return: 1 if n is prime, 0 if not
  */
-int _sqrt_recursion_helper(int n, int start, int end)
+int actual_prime(int n, int i)
 {
-int mid = 0;
-int pow = 0;
-
-if (start <= end)
-{
-mid = (start + end) / 2;
-pow = mid * mid;
-
-if (start <= end)
-if (pow == n)
-return (mid);
-
-if (pow > n)
-return (_sqrt_recursion_helper(n, start, mid - 1));
-else
-return (_sqrt_recursion_helper(n, mid + 1, end));
-}
-return (-1);
+	if (i == 1)
+		return (1);
+	if (n % i == 0 && i > 0)
+		return (0);
+	return (actual_prime(n, i - 1));
 }
