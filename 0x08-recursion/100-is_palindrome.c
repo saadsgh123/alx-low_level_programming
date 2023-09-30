@@ -11,10 +11,11 @@ int is_palindrome(char *s)
 {
 int len = _strlen_recursion(s) - 1;
 
-return check_polindrom(s, 0, len);
+return (check_polindrom(s, 0, len));
 }
 /**
  * check_polindrom - check the code
+ * @s: character to check
  * @start: index from 0
  * @end: index from string length.
  * Return: Always 0.
@@ -33,7 +34,7 @@ if (s[start] == s[end] && start > end)
 {
 return (1);
 }
-return (check_polindrom(s,start + 1,end - 1));
+return (check_polindrom(s, start + 1, end - 1));
 }
 /**
  * _strlen_recursion - check the code
