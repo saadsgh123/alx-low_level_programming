@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int res;
 if (argc <= 1)
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 
