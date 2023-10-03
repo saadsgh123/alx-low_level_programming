@@ -17,10 +17,9 @@ printf("Error\n");
 return (1);
 }
 
-if (argc >= 3)
+if (argc >= 2)
 {
-res = atoi(argv[1]) * atoi(argv[2]);
-printf("%d\n", res);
+printf("%d\n", (atoi(argv[1]) * atoi(argv[2])));
 }
 
 return (0);
