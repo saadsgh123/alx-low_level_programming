@@ -18,7 +18,7 @@ for (i = 1; i < argc; i++)
 x = atoi(argv[i]);
 if (argc > 2)
 {
-if (_isalpha(argv[i][0]))
+if (_is_alpha(argv[i][0]))
 {
 printf("Error\n");
 return (1);
