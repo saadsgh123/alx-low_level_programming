@@ -14,6 +14,7 @@ int res;
 if (argc <= 1)
 {
 printf("Error");
+return (1);
 }
 
 if (argc >= 2)
