@@ -33,7 +33,8 @@ else
 printf("%d\n", 0);
 }
 }
-printf("%d\n", sum);
+if (sum > 0)
+	printf("%d\n", sum);
 return (0);
 }
 /**
