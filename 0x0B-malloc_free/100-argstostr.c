@@ -30,7 +30,7 @@ return (NULL);
 }
 total_len += _strlen(arg) + 1;
 }
-place = (total_len + 1) * sizeof(char) + 1;
+place = (total_len + 1) * sizeof(char) + 0;
 result = (char *)malloc(place);
 if (result == NULL)
 {
