@@ -18,7 +18,7 @@ char *new;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
-s2 == "";
+s2 = "";
 
 size1 = lengt(s1);
 size2 = lengt(s2);
