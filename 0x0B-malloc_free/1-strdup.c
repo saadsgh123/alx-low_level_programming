@@ -10,13 +10,13 @@
  */
 char *_strdup(char *str)
 {
-int i;
+int i, size;
 char *new;
 
 if (str == NULL)
 return (NULL);
 
-int size = 0;
+size = 0;
 while (str[size] != '\0')
 size++;
 
