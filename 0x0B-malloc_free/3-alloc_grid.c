@@ -33,9 +33,9 @@ free(matrix);
 return (NULL);
 }
 }
-for (x = 0; i < height; i++)
+for (x = 0; x < height; x++)
 {
-for (y = 0; j < width; j++)
+for (y = 0; y < width; y++)
 {
 matrix[i][j] = 0;
 }
