@@ -10,32 +10,26 @@
  */
 char *_strdup(char *str)
 {
-int i, size;
+int i;
 char *new;
 
-size = str_leng(str, 0);
 if (str == NULL)
 return (NULL);
 
+int size = 0;
+while (str[size] != '\0')
+size++;
+
 new = malloc(sizeof(char) * (size + 1));
-for (i = 0; str[i]; i++)
+
+if (new == NULL)
+return (NULL);
+
+for (i = 0; str[i] != '\0'; ++i)
 {
 new[i] = str[i];
 }
+new[i] = '\0';
+
 return (new);
-}
-/**
- * str_leng - prints buffer in hexa
- * @c: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
- */
-int str_leng(char *c, int size)
-{
-while (*c)
-{
-return (str_leng(c + 1, size + 1));
-}
-return (size);
 }
