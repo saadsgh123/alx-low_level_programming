@@ -6,18 +6,22 @@
  * _strdup - prints buffer in hexa
  * @str: the size of the memory to print
  *
- * Return: 0.
+ * Return: Nothing.
  */
 char *_strdup(char *str)
 {
+int i, size;
 char *new;
-int size = str_leng(str, 0);
 
+size = str_leng(str, 0);
 if (str == NULL)
 return (NULL);
 
 new = malloc(sizeof(char) * (size + 1));
-strcpy(new, str);
+for (i = 0; str[i]; i++)
+{
+new[i] = str[i];
+}
 return (new);
 }
 /**
