@@ -23,7 +23,7 @@ return (NULL);
 total_len = 0;
 for (i = 0; i < ac; i++)
 {
-char *arg = av[i];
+arg = av[i];
 if (arg == NULL)
 {
 return (NULL);
