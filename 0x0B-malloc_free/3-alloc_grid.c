@@ -37,7 +37,7 @@ for (x = 0; x < height; x++)
 {
 for (y = 0; y < width; y++)
 {
-matrix[i][j] = 0;
+matrix[x][y] = 0;
 }
 }
 return (matrix);
