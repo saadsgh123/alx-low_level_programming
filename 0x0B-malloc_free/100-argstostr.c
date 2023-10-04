@@ -21,7 +21,7 @@ return (NULL);
 }
 
 total_len = 0;
-for (int i = 0; i < ac; i++)
+for (i = 0; i < ac; i++)
 {
 char *arg = av[i];
 if (arg == NULL)
