@@ -15,13 +15,9 @@ int size = str_leng(str, 0);
 
 if (str == NULL)
 return (NULL);
- 
-new = malloc(sizeof(char) * (size + 1));
 
-for (i = 0; str[i] != '\0'; ++i)
-{
-new[i] = str[i];
-}
+new = malloc(sizeof(char) * (size + 1));
+strcpy(new, str);
 return (new);
 }
 /**
