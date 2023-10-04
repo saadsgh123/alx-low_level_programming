@@ -18,7 +18,7 @@ return (NULL);
  
 new = malloc(sizeof(char) * (size + 1));
 
-for (i = 0; i < size; ++i)
+for (i = 0; str != '\0'; ++i)
 {
 new[i] = str[i];
 }
