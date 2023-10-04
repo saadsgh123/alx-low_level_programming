@@ -35,7 +35,7 @@ while (*(str + str_length))
 {
 str_length++;
 }
-words = count_words(str);
+words = count_word(str);
 if (words == 0)
 return (NULL);
 word_array = (char **)malloc(sizeof(char *) * (words + 1));
