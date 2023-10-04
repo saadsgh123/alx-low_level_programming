@@ -14,7 +14,7 @@ int _strlen(char *str);
 char *argstostr(int ac, char **av)
 {
 int pos, total_len, i, j, len, place;
-char *arg;
+char *arg, *result;
 if (ac <= 0 || av == NULL)
 {
 return (NULL);
@@ -31,7 +31,7 @@ return (NULL);
 total_len += _strlen(arg) + 1;
 }
 place = (total_len + 1) * sizeof(char) + 1;
-char *result = (char *)malloc(place);
+result = (char *)malloc(place);
 if (result == NULL)
 {
 return (NULL);
