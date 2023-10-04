@@ -15,7 +15,9 @@ int size = str_leng(str, 0);
 if (str == NULL)
 return (NULL);
 
-char *new = malloc(sizeof(char) * size);
+char *new;
+ 
+new = malloc(sizeof(char) * size);
 
 for (i = 0; i < size; ++i)
 {
