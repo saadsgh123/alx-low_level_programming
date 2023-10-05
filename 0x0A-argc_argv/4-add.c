@@ -23,7 +23,7 @@ else
 for (i = 1; i < argc; i++)
 {
 x = atoi(argv[i]);
-if (_is_alpha(argv[i]))
+if (_is_alpha(argv[i][0]))
 {
 printf("Error\n");
 return (1);
