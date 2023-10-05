@@ -14,15 +14,16 @@ int main(int argc, char *argv[])
 {
 int i, x, sum = 0;
 
-if (argc == 2)
+if (argc <= 2)
+{
 printf("%d\n", 0);
-
+}
+else
+{
 for (i = 1; i < argc; i++)
 {
 x = atoi(argv[i]);
-if (argc > 2)
-{
-if (_is_alpha(argv[i][0]))
+if (_is_alpha(argv[i]))
 {
 printf("Error\n");
 return (1);
@@ -32,9 +33,11 @@ else
 sum = sum + x;
 }
 }
-}
 if (sum > 0)
+{
 printf("%d\n", sum);
+}
+}
 return (0);
 }
 /**
