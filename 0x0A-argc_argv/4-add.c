@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+int _is_alpha(char c);
 /**
  * main - Entry point.
  *
@@ -11,7 +12,10 @@
  */
 int main(int argc, char *argv[])
 {
-int i, x = 0, sum = 0;
+int i, x, sum = 0;
+
+if (argc <= 2)
+printf("%d\n", 0);
 
 for (i = 1; i < argc; i++)
 {
@@ -28,13 +32,9 @@ else
 sum = sum + x;
 }
 }
-else
-{
-printf("%d\n", 0);
-}
 }
 if (sum > 0)
-	printf("%d\n", sum);
+printf("%d\n", sum);
 return (0);
 }
 /**
