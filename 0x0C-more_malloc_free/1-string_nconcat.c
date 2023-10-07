@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_nconcat - Concatenates two strings, s1 followed by the first n bytes of s2
+ * string_nconcat - Concatenates two strings, s1 followed by the first n
  * @s1: The first string
  * @s2: The second string
  * @n: The number of bytes from s2 to concatenate
