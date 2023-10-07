@@ -1,55 +1,47 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 /**
- * string_nconcat - check the code
- * @s1:the first string
- * @s2:the second string
- * @n:the size of character to add.
- * Return: char pointer.
+ * string_nconcat - Concatenates two strings, s1 followed by the first n bytes of s2
+ * @s1: The first string
+ * @s2: The second string
+ * @n: The number of bytes from s2 to concatenate
+ *
+ * Return: A pointer to the concatenated string, or NULL on failure
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int s1len = 0, s2len = 0, i, j;
-char *new;
+unsigned int s1_len = 0, s2_len = 0;
+unsigned int total_len = 0, i;
+char *concatenated;
 
-s1len = length(s1);
-s2len = length(s2);
+if (s1 == NULL)
+s1 = "";
 
-if (s2len > n)
-{
-new = malloc(s1len + n + 1);
-}
+if (s2 == NULL)
+s2 = "";
+
+while (s1[s1_len])
+s1_len++;
+while (s2[s2_len])
+s2_len++;
+
+if (n >= s2_len)
+total_len = s1_len + s2_len;
 else
-{
-new = malloc(s1len + s2len);
-}
-if (!new)
+total_len = s1_len + n;
+
+concatenated = malloc(total_len + 1);
+
+if (concatenated == NULL)
 return (NULL);
 
-for (i = 0; i != s1len; i++)
-*(new + i) = s1[i];
+for (i = 0; i < s1_len; i++)
+concatenated[i] = s1[i];
 
-for (j = 0; j < n; ++j)
-{
-new[s1len + j] = *s2;
-s2++;
-}
+for (i = 0; i < n && s2[i]; i++)
+concatenated[s1_len + i] = s2[i];
 
-new[s1len + j] = '\0';
-return (new);
-}
-/**
- * length - check the code
- * @s:characters to check.
- * Return: length.
- */
-int length(char *s)
-{
-int i = 0;
-while (*s)
-{
-i++;
-s++;
-}
-return (i);
+concatenated[total_len] = '\0';
+
+return (concatenated);
 }
