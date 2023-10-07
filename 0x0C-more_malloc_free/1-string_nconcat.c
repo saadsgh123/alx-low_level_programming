@@ -9,7 +9,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int s1len, i, j;
+unsigned int s1len, i, j;
 char *new;
 
 s1len = length(s1);
