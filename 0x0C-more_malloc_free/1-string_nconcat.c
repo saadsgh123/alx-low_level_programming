@@ -21,7 +21,7 @@ new = malloc(s1len + n + 1);
 }
 else
 {
-new = malloc(s1len + s2len + 1)
+new = malloc(s1len + s2len)
 }
 if (new == NULL)
 return (NULL);
