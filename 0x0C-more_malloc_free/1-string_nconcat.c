@@ -25,7 +25,7 @@ for (i = 0; i != s1len; i++)
 
 for (j = 0; j < n; ++j)
 {
-new[s1len + j + 1] = *s2;
+new[s1len + j] = *s2;
 s2++;
 }
 
