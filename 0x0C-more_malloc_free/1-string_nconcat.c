@@ -15,7 +15,7 @@ char *new;
 s1len = length(s1);
 s2len = length(s2);
 
-if (s2len >= n)
+if (s2len > n)
 {
 new = malloc(s1len + n + 1);
 }
