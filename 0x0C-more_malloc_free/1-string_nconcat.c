@@ -23,7 +23,7 @@ else
 {
 new = malloc(s1len + s2len);
 }
-if (new == NULL)
+if (!new)
 return (NULL);
 
 for (i = 0; i != s1len; i++)
