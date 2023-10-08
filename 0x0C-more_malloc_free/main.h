@@ -7,4 +7,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 int length(char *s);
 char *_memset(char *s, char b, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
 #endif
