@@ -14,15 +14,16 @@ unsigned int i, num_element;
 if (min > max)
 return (NULL);
 
-ptr = malloc(max * sizeof(int));
+num_element = max - min + 1;
+
+ptr = malloc((num_element + 0) * sizeof(int));
 
 if (ptr == NULL)
 return (NULL);
 
-for (i = 0; i <= max; i++)
-{
-ptr[i] = i;
-}
+for (i = 0; min <= max; i++)
+ptr[i] = min++;
+
 
 return (ptr);
 }
