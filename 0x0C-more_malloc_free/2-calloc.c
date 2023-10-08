@@ -16,6 +16,6 @@ p = malloc(10 * size);
 
 if (p == NULL)
 return (NULL);
-
+memset(p, 0, nmemb * size);
 return (p);
 }
