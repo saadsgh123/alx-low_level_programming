@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include "main.h"
 /**
  * _calloc - check the code
  * @nmemb: number of elements
