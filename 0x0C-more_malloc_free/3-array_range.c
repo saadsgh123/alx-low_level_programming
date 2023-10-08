@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include "main.h"
 /**
  * array_range - check the code
  * @min: min element.
