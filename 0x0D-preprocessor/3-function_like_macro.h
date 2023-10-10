@@ -1,6 +1,6 @@
-#ifndef ABS(x)
-#define ABS(x)
+#ifndef MAIN_H
+#define MAIN_H
 
-ABS(x) (x * -1)
+#define ABS(x) (x * -1)
 
 #endif
