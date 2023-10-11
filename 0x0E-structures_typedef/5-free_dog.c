@@ -2,7 +2,7 @@
 #include <dog.h>
 /**
  * free_dog - check the code
- * @dog: pointer to dog_t.
+ * @d: pointer to dog_t.
  */
 void free_dog(dog_t *d)
 {
