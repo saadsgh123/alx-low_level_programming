@@ -4,12 +4,12 @@
  * free_dog - check the code
  * @dog: pointer to dog_t.
  */
-void free_dog(dog_t *dog)
+void free_dog(dog_t *d)
 {
-	if (dog)
+	if (d)
 	{
-		free(dog->name);
-		free(dog->owner);
-		free(dog);
+		free(d->name);
+		free(d->owner);
+		free(d);
 	}
 }
