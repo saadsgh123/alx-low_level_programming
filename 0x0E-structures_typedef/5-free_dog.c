@@ -7,7 +7,7 @@
  */
 void free_dog(dog_t *dog)
 {
-	if (dog != NULL)
+	if (dog)
 	{	
 		free(dog->name);
 		free(dog->owner);
