@@ -20,7 +20,7 @@ typedef struct listint_s
 } listint_t;
 ```
 
-## Function: `print_listint`
+## Function 1: `print_listint`
 
 ### Description:
 This function is used to print the elements of a singly linked list of integers.
