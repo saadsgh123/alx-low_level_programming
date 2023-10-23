@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include "lists.h"
 /**
  * print_listint - function that returns the number of elements and print them.
