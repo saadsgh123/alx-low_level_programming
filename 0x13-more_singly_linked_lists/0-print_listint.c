@@ -1,7 +1,7 @@
 #include <stddef.h>
 #include "lists.h"
 /**
- * print_listint - function that returns the number of elements
+ * print_listint - function that returns the number of elements and print them.
  * @h: the first element of a list.
  * Return: Always 0.
  */
