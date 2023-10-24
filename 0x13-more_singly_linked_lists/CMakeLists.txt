@@ -11,4 +11,5 @@ add_executable(0x13_more_singly_linked_lists main.c
         3-add_nodeint_end.c
         4-free_listint.c
         5-free_listint2.c
+        6-pop_listint.c
 )
