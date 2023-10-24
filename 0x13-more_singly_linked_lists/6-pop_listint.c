@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ * pop_listint - prints all the elements of a linked list
+ * @head: linked list of type listint_t to print
+ *
+ * Return: n.
+ */
 int pop_listint(listint_t **head)
 {
 
