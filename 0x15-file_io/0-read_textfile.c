@@ -10,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	int file_descriptor, i = 0;
 	char buffer[letters];
-	ssize_t bytes_read;
+	ssize_t bytes_read, nwr;
 
 	file_descriptor = open(filename, O_RDONLY);
 
@@ -21,15 +21,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	bytes_read = read(file_descriptor, buffer, sizeof(buffer));
 
-	buffer[bytes_read] = '\0';
-
-	while (buffer[i] != '\0')
-	{
-		_putchar(buffer[i]);
-		i++;
-	}
+	nwr = write(STDOUT_FILENO, buffer, bytes_read);
 
 	close(file_descriptor);
 
-	return (bytes_read);
+	return (nwr);
 }
