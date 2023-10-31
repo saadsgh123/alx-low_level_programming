@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 int main(int ac, char **av) {
     ssize_t n;
