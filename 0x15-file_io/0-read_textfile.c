@@ -8,24 +8,18 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-	int file_descriptor = open(filename, O_RDONLY);
-	int i = 0;
+	int file_descriptor, i = 0;
 	char buffer[letters];
+	ssize_t bytes_read;
+
+	file_descriptor = open(filename, O_RDONLY);
 
 	if (file_descriptor < 0)
 	{
-		perror("Error opening file");
-		return (-1);
+		return (0);
 	}
 
-	ssize_t bytes_read = read(file_descriptor, buffer, sizeof(buffer));
-
-	if (bytes_read < 0)
-	{
-		perror("Error reading file");
-		close(file_descriptor);
-		return (-1);
-	}
+	bytes_read = read(file_descriptor, buffer, sizeof(buffer));
 
 	buffer[bytes_read] = '\0';
 
