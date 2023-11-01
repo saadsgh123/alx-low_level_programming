@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 99)
 add_executable(0x15_file_io main.c
         0-read_textfile.c
         main.h
-        _putchar.c)
+        _putchar.c
+        1-create_file.c)
