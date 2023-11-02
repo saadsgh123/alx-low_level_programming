@@ -73,6 +73,12 @@ build CMakeFiles/0x15_file_io.dir/1-create_file.c.o: C_COMPILER__0x15_file_io_un
   OBJECT_DIR = CMakeFiles/0x15_file_io.dir
   OBJECT_FILE_DIR = CMakeFiles/0x15_file_io.dir
 
+build CMakeFiles/0x15_file_io.dir/2-append_text_to_file.c.o: C_COMPILER__0x15_file_io_unscanned_Debug /Users/macbookpro/Desktop/alx-low_level_programming/0x15-file_io/2-append_text_to_file.c || cmake_object_order_depends_target_0x15_file_io
+  DEP_FILE = CMakeFiles/0x15_file_io.dir/2-append_text_to_file.c.o.d
+  FLAGS = -g -std=gnu99 -isysroot "/Applications/Xcode 22.08.19.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk" -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/0x15_file_io.dir
+  OBJECT_FILE_DIR = CMakeFiles/0x15_file_io.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0x15_file_io
@@ -81,7 +87,7 @@ build CMakeFiles/0x15_file_io.dir/1-create_file.c.o: C_COMPILER__0x15_file_io_un
 #############################################
 # Link the executable 0x15_file_io
 
-build 0x15_file_io: C_EXECUTABLE_LINKER__0x15_file_io_Debug CMakeFiles/0x15_file_io.dir/main.c.o CMakeFiles/0x15_file_io.dir/0-read_textfile.c.o CMakeFiles/0x15_file_io.dir/_putchar.c.o CMakeFiles/0x15_file_io.dir/1-create_file.c.o
+build 0x15_file_io: C_EXECUTABLE_LINKER__0x15_file_io_Debug CMakeFiles/0x15_file_io.dir/main.c.o CMakeFiles/0x15_file_io.dir/0-read_textfile.c.o CMakeFiles/0x15_file_io.dir/_putchar.c.o CMakeFiles/0x15_file_io.dir/1-create_file.c.o CMakeFiles/0x15_file_io.dir/2-append_text_to_file.c.o
   FLAGS = -g -isysroot "/Applications/Xcode 22.08.19.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
   OBJECT_DIR = CMakeFiles/0x15_file_io.dir
   POST_BUILD = :

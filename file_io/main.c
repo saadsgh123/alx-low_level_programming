@@ -1,19 +1,29 @@
-#include <errno.h>
-#include <fcntl.h>
 #include <stdio.h>
-extern int errno;
-int main() {
+#include <dirent.h>
+#include <string.h>
 
-    int file_descriptor = open("new.txt", O_RDONLY | O_CREAT);
+int main()
+{
+    DIR *folder;
+    struct dirent *entry;
 
-    printf("fd = %d\n", file_descriptor);
-
-    if (file_descriptor == -1) {
-        // print which type of error have in a code
-        printf("Error Number % d\n", errno);
-
-        // print program detail "Success or failure"
-        perror("Program");
+    folder = opendir(".");
+    if (folder == NULL) {
+        perror("the file couldn't be opened");
+        return (1);
     }
+    int found = 0;
+    while ((entry = readdir(folder)))
+    {
+        if (strcmp(entry->d_name, "file.txt") == 0) {
+            printf("Found: %s\n", "file.txt");
+            found = 1;
+            break;
+        }
+    }
+    if (!found){
+        printf("Not found: %s\n", "file.txt");
+    }
+    closedir(folder);
     return 0;
 }
