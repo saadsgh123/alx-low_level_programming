@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-int main(int ac, char **av)
+int main1(int ac, char **av)
 {
     int res;
 
