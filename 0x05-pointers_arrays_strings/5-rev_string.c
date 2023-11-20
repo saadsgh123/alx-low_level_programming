@@ -5,7 +5,7 @@
  */
 void rev_string(char *s)
 {
-	char str[32] = "";
+	char str[1024] = "";
 	int idx = 0;
 
 	while (s[idx])
