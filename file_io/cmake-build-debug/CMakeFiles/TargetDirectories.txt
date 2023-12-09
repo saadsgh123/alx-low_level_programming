@@ -1,0 +1,3 @@
+/Users/macbookpro/Desktop/alx-low_level_programming/file_io/cmake-build-debug/CMakeFiles/file_io.dir
+/Users/macbookpro/Desktop/alx-low_level_programming/file_io/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/macbookpro/Desktop/alx-low_level_programming/file_io/cmake-build-debug/CMakeFiles/rebuild_cache.dir
