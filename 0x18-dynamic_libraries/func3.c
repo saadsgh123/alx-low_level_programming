@@ -8,6 +8,7 @@
 char *_strcat(char *dest, char *src)
 {
 	char *copy = dest;
+
 	while (*dest)
 		dest++;
 	while ((*dest++ = *src++))
@@ -25,6 +26,7 @@ char *_strcat(char *dest, char *src)
 char *_strncat(char *dest, char *src, int n)
 {
 	char *copy = dest;
+
 	while (*dest)
 		dest++;
 	while (n-- > 0 && (*dest++ = *src++))
@@ -43,6 +45,7 @@ char *_strncat(char *dest, char *src, int n)
 char *_strncpy(char *dest, char *src, int n)
 {
 	char *copy = dest;
+
 	while (n-- > 0 && (*dest++ = *src++))
 		;
 	while (n-- > 0)
@@ -76,6 +79,7 @@ int _strcmp(char *s1, char *s2)
 char *_memset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
+
 	while (n-- > 0)
 	{
 		*ptr++ = b;

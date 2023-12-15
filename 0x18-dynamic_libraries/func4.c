@@ -10,7 +10,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *d = dest;
 	const char *s = src;
-    
+
 	while (n-- > 0)
 	{
 		*d++ = *s++;
@@ -57,13 +57,13 @@ unsigned int _strspn(char *s, char *accept)
  * @accept: accept
  * Return: new string
  */
-char *_strpbrk(char *s, char *accept) 
+char *_strpbrk(char *s, char *accept)
 {
 	while (*s != '\0')
 	{
 		if (strchr(accept, *s) != NULL)
 		{
-			return s;
+			return (s);
 		}
 		s++;
 	}

@@ -17,6 +17,7 @@ int _isdigit(int c)
 int _strlen(char *s)
 {
 	int length = 0;
+
 	while (*s != '\0')
 	{
 		length++;
