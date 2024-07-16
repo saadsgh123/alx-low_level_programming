@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "search_algos.h"
 /**
  * linear_search - searches for a value in an array of integers using the
  * Linear search algorithm
@@ -7,6 +8,7 @@
  * @size: The number of elements in array
  * @value: The value to search for
  * Return: The first index where value is located
+ * Description: Prints a value every time it is compared in the array.
  */
 int linear_search(int *array, size_t size, int value)
 {
