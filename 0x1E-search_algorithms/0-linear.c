@@ -1,3 +1,8 @@
+/*
+ * File: 0-linear.c
+ * Auth: Saad sghouri
+ */
+
 #include "search_algos.h"
 
 /**
